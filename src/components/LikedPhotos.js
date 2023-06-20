@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const LikedPhotos = () => {
+
+const LikedPhotos = ({ allLikedPhotos }) => {
   return (
-    <div>LikedPhotos</div>
-  )
-}
+    <div className="likedContainer">
+       {allLikedPhotos.map((photoUrl, index) => (
+        <img key={index} src={photoUrl} alt="Disliked Pic" />
+      ))}
+    </div>
+  );
+};
 
-export default LikedPhotos
+export default LikedPhotos;

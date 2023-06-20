@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.cardDiv {
+  width: 350px;
+  height: auto;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerMain {
+  margin: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.secContainer {
+  margin-right: 3%;
+}

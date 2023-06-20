@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const DislikedPhotos = () => {
+const DislikedPhotos = ({ dislikedPhotos }) => {
   return (
-    <div>DislikedPhotos</div>
-  )
-}
+    <div className="dislikedContainer">
+      {dislikedPhotos.map((photoUrl, index) => (
+        <img key={index} src={photoUrl} alt="Disliked Pic" />
+      ))}
+    </div>
+  );
+};
 
-export default DislikedPhotos
+export default DislikedPhotos;
